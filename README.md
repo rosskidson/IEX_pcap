@@ -3,7 +3,7 @@ C++ library for decoding stock market data from pcap files available from the IE
 
 ### Brief explanation
 
-The IEX stock market exchange (https://iextrading.com/) provides all historical data from their exchange, free to download, since end of 2016. The data is stored in .pcap files, so in order to access the data, the packets need to extracted from the pcap files and decoded into usable data using the spec released by IEX.  This library provides an interface to do exactly that.  There is no functionality to access IEX's web API, however there are already tonnes of libraries in all languages that do that listed on the website.
+The IEX stock market exchange (https://iextrading.com/) provides all historical data from their exchange, free to download, since end of 2016. The data is stored in .pcap files, so in order to access the data, the packets need to extracted from the pcap files and decoded into usable data using the spec released by IEX.  This library provides an interface to do exactly that.  This doesn't provide any functionality to access IEX's web API, however given the large number of existing libraries in multiple languages listed on their website that already do that, I just focused on a pcap interface here.
 
 ### Building
 
