@@ -3,7 +3,7 @@ C++ library for decoding stock market data from pcap files available from the IE
 
 ### Brief explanation
 
-The IEX stock market exchange (https://iextrading.com/) provides all historical data from their exchange, free to download, since end of 2016. The data is stored in .pcap files, so in order to access the data, the packets need to extracted from the pcap files and decoded into usable data using the spec released by IEX.  This library provides an interface to do exactly that.
+The IEX stock market exchange (https://iextrading.com/) provides all historical data from their exchange, free to download, since end of 2016. The data is stored in .pcap files, so in order to access the data, the packets need to extracted from the pcap files and decoded into usable data using the spec released by IEX.  This library provides an interface to do exactly that.  There is no functionality to access IEX's web API, however there are already tonnes of libraries in all languages that do that listed on the website.
 
 ### Building
 
@@ -15,7 +15,7 @@ cmake .. && make
 
 ### Usage
 
-Following is a minimal example to extract all the L1 ticks for the ticker AMD to output to csv.
+Following is a minimal example to extract all the L1 ticks for the ticker AMD and output to csv.  This is included in the source.
 
 ``` c++
 #include "iex_decoder.h"
@@ -85,9 +85,10 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-This library provides structs for all message types contained within the pcap files, both TOPS and DEEP.  For more information, read the documentation on the website https://iextrading.com/trading/market-data/ or/and have a look at include/iex_messages.h
+This library provides structs for all message types contained within the pcap files, both TOPS and DEEP.  For more information, read the documentation on the website https://iextrading.com/trading/market-data/ and have a look at include/iex_messages.h
 
 ### Dependencies
+
 This project depends on gtest and pcapplusplus.  They are both pulled in using CMake's ExternalProject_Add so there shouldn't be anything to do, just have internet when you are building it.
 
 ### Compatibility
