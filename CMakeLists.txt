@@ -76,7 +76,7 @@ install(TARGETS iex_pcap DESTINATION ${CMAKE_SOURCE_DIR}/lib)
 add_dependencies(iex_pcap project_pcapplusplus)
 add_dependencies(iex_pcap googletest)
 
-add_executable(csv_example  "src/quote_csv_example.cpp")
+add_executable(csv_example  "src/csv_example.cpp")
 target_link_libraries(csv_example iex_pcap ${EXT_LIBRARIES})
 install(TARGETS csv_example DESTINATION ${CMAKE_SOURCE_DIR}/bin)
 
