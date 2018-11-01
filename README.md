@@ -95,10 +95,6 @@ This project depends on gtest and pcapplusplus.  They are both pulled in using C
 
 I have tested this on Mac and Linux.  There is no reason why it can't work on Windows, but I haven't tested it and I don't know anything about Windows build environments so it probably will need some tweaking.
 
-### Testing
-
-This project has unit tests.  Run test_iex from the build directory.
-
 ### Feature TODO list
 - JSON serialization of all message types (https://stackoverflow.com/a/19974486)
 - Automatic download of pcap files given a certain date
