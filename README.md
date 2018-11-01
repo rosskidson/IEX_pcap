@@ -101,3 +101,4 @@ I have tested this on Mac and Linux.  There is no reason why it can't work on Wi
 - Python bindings
 
 I am not currently working on this project right now. If any of these features look interesting to you, please contact me.
+If you have any issues or find any bugs, I am happy to help.
