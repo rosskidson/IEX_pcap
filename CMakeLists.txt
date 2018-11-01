@@ -82,8 +82,8 @@ install(TARGETS csv_example DESTINATION ${CMAKE_SOURCE_DIR}/bin)
 
 
 ### Unit tests
-add_executable(test_test "test/test.cpp")
-target_link_libraries(test_test gtest gmock iex_pcap pthread ${EXT_LIBRARIES})
+add_executable(test_iex "test/test.cpp")
+target_link_libraries(test_iex gtest gmock iex_pcap pthread ${EXT_LIBRARIES})
 
 
 
